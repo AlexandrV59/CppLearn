@@ -36,7 +36,7 @@ int main()
     cin>>choice;
     switch(choice)
     {
-        case 1: // comma, not dots 
+        case 1: // dots, not comma 
             cout<<"You picked Easy.\n";
             break;
         case 2:
