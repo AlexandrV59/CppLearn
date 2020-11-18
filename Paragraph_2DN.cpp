@@ -12,19 +12,19 @@ int main()
     cout<<"***Game Designer's Network***\n"<<endl;
     do
     {
-        cout<<"Username:"<<endl;
+        cout<<"Username:";
         cin>>username;
-        cout<<"Password:"<<endl;
+        cout<<"Password:";
         cin>>password;
         if (username == "AlexandrV" && password == "simplegame")
         {
             cout<<"\n***You're welcome***"<<endl;
             success = true;
         }
-        else if (username == "AlexandrV" || password != "simplegame")
+        else if (username == "AlexandrV" && password != "simplegame")
         {
-            cout<<"Error password:"<<endl;
-            success = false;    
+            cout<<"Error password, try again:"<<endl;
+            success = false; 
         }
         else if (username != "AlexandrV" && password != "simplegame")
         {
